@@ -66,7 +66,7 @@ function validateParam(obj, prop, validator, defaultValue) {
             `validator ${validator.name} failed on ${prop} = "${param}"`,
           ],
         },
-        422
+        422,
       )
     }
   }
@@ -80,4 +80,3 @@ function formatArticleSlug(title) {
   return title.trim().toLowerCase().replace(/\s+/g, '-')
 }
 exports.formatArticleSlug = formatArticleSlug
-
