@@ -66,7 +66,7 @@ function validateParam(obj, prop, validator, defaultValue) {
             `validator ${validator.name} failed on ${prop} = "${param}"`,
           ],
         },
-        422,
+        422
       )
     }
   }

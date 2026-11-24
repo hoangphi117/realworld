@@ -56,7 +56,7 @@ describe('Unit Tests: Helpers & Utilities (lib.js)', () => {
         {},
         'limit',
         lib.validatePositiveInteger,
-        20,
+        20
       )
       expect(res).toBe(20)
     })
@@ -66,7 +66,7 @@ describe('Unit Tests: Helpers & Utilities (lib.js)', () => {
         { limit: '15' },
         'limit',
         lib.validatePositiveInteger,
-        20,
+        20
       )
       expect(res).toBe(15)
     })
@@ -77,7 +77,7 @@ describe('Unit Tests: Helpers & Utilities (lib.js)', () => {
           { limit: 'invalid' },
           'limit',
           lib.validatePositiveInteger,
-          20,
+          20
         )
       }).toThrow(lib.ValidationError)
 
@@ -86,7 +86,7 @@ describe('Unit Tests: Helpers & Utilities (lib.js)', () => {
           { limit: 'invalid' },
           'limit',
           lib.validatePositiveInteger,
-          20,
+          20
         )
       } catch (err) {
         expect(err.status).toBe(422)
